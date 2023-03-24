@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="mobile.html">Mobile</a>
+                </li>
+                <li>
+                    <a href="games.html">Games</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Contato</h1>
+        </header>
+        <section>
+            <h2>Envie sua mensagem</h2>
+            <form action="index.html" method="get" name="contato">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="idNome">* Nome:</label>
+                    <input type="text" name="nome" id="idNome" required autofocus>
+                    <br>
+                    <label for="idEmail">* E-Mail</label>
+                    <input type="text" name="email" id="idEmail" required placeholder="nome@email.com">
+                    <br>
+                    <label for="idSenha">Senha</label>
+                    <input type="password" name="senha" id="idSenha" minlength="8" maxlength="12">
+                    <br>
+                    <label for="phone">Fone:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                    <br>
+                    <label for="idData">Data de nascimento?</label>
+                    <input type="date" name="date" id="idData">
+                    
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Busca</legend>
+                    <label for="idBusca">Busca:</label>
+                    <input type="search" name="busca" id="idBusca" placeholder="Google">
+                    <br>
+                    <label for="idURL">URL</label>
+                    <input type="url" name="URL" id="idURL" autocomplete="url"><br>
+                    <label for="qunatidade">Quantidade: </label>
+                    <input type="number" name="quantidade" id="idQuantidade" min="1" max="10">
+                    <br>
+
+                    <label for="idNota">Nota:</label>
+                    <input type="range" name="idNota" id="idNota" min="1" max="10"><br>
+
+                    <label for="idCidade">Cidade:</label>
+                    <select name="cidade" id="idCidade">
+                        <optgroup label="Sudeste">
+                            <option value="Sp">São Paulo</option>
+                            <option value="Rj">Rio de Janeiro</option>
+                            <option value="BH">Belo Horizonte</option>  
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="PA">Porto Alegre</option>
+                        </optgroup>
+                    </select>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Tamanhos</legend>
+                    <input type="radio" name="tamanho" id="idP" value="P">
+                    <label for="idP">P</label>
+                    <input type="radio" name="tamanho" id="idM" value="m">
+                    <label for="idP">M</label>
+                    <input type="radio" name="tamanho" id="idG" value="g">
+                    <label for="idP">G</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cor</legend>
+
+                    <input type="checkbox" name="cor" id="idVermelho" value="vermelho">
+                    <label for="idVermelho">Vermelho</label>
+
+                    <input type="checkbox" name="cor" id="idAmarelo" value="amarelo">
+                    <label for="idAmarelo">Amarelo</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+
+                    <textarea name="mensagem" id="idMensagem" cols="50" rows="5"></textarea>
+                </fieldset>
+
+                
+
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </section>
+        <footer>
+            <p>
+                Contato: <a href="https://www.instagram.com/matheuscms_/">instagram.com/matheuscms_/</a>
+            </p>
+            <p>
+                Autor: Matheus Sampaio
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
