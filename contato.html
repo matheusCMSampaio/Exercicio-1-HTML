@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div>
@@ -29,18 +30,27 @@
             <form action="index.html" method="get" name="contato">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
+                    
                     <label for="idNome">* Nome:</label>
                     <input type="text" name="nome" id="idNome" required autofocus>
+                    
                     <br>
+                    
                     <label for="idEmail">* E-Mail</label>
                     <input type="text" name="email" id="idEmail" required placeholder="nome@email.com">
+                    
                     <br>
+                    
                     <label for="idSenha">Senha</label>
                     <input type="password" name="senha" id="idSenha" minlength="8" maxlength="12">
+                    
                     <br>
+                    
                     <label for="phone">Fone:</label>
                     <input type="tel" name="phone" id="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                    
                     <br>
+                    
                     <label for="idData">Data de nascimento?</label>
                     <input type="date" name="date" id="idData">
                     
@@ -50,9 +60,12 @@
                     <legend>Busca</legend>
                     <label for="idBusca">Busca:</label>
                     <input type="search" name="busca" id="idBusca" placeholder="Google">
+                    
                     <br>
+
                     <label for="idURL">URL</label>
                     <input type="url" name="URL" id="idURL" autocomplete="url"><br>
+
                     <label for="qunatidade">Quantidade: </label>
                     <input type="number" name="quantidade" id="idQuantidade" min="1" max="10">
                     <br>
